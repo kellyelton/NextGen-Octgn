@@ -2,7 +2,7 @@
 <game name="NextGen" 
       id="f80624da-58d7-4957-acd6-8a9ccb41619d" 
 	  octgnVersion="3.1.0.0" 
-	  version="1.0.0.1" 
+	  version="1.0.0.2" 
       markersize="25" 
 	  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
 	  tags="CCG Game Developer" 
@@ -61,6 +61,8 @@
     <hand name="Hand" shortcut="ctrl+H" visibility="me" ordered="False" width="63" height="88" icon="groups/hand.png">
        <cardaction menu="Discard Card" shortcut="del" execute="discard" />
     </hand>
+	<group name="Main" visibility="me" width="63" height="88" icon="groups/hand.png" ordered="False"></group>
+	<group name="Contacts" visibility="me" width="63" height="88" icon="groups/hand.png" ordered="False"></group>
   </player>
   <shared>
 
