@@ -76,7 +76,7 @@
 		<property name="DevelopmentTime" value="10"/>
 		<property name="InitialCost" value="4"/>
 		<property name="FeaturePoints" value="2"/>
-		<!-- <property name="DeveloperPoints" value="2"/>-->
+		<property name="DeveloperPoints" value="2"/>
 	</card>
 		<card id="4e31630a-6797-4ccc-97d3-dc2def2183e1" name="Multiplayer Co-Op">
 		<property name="Type" value="Feature"/>
@@ -85,7 +85,7 @@
 		<property name="DevelopmentTime" value="12"/>
 		<property name="InitialCost" value="6"/>
 		<property name="FeaturePoints" value="4"/>
-		<!-- <property name="DeveloperPoints" value="6"/>-->
+		<property name="DeveloperPoints" value="6"/>
 	</card>
 		<card id="67f5d28b-ca8a-4892-99e8-c047aff27102" name="Character Creation">
 		<property name="Type" value="Feature"/>
@@ -94,7 +94,7 @@
 		<property name="DevelopmentTime" value="8"/>
 		<property name="InitialCost" value="3"/>
 		<property name="FeaturePoints" value="6"/>
-		<!-- <property name="DeveloperPoints" value="4"/>-->
+		<property name="DeveloperPoints" value="4"/>
 	</card>
 		<card id="ff7ee789-a8ee-4a50-9837-a97d1d48b5ec" name="Friend List">
 		<property name="Type" value="Feature"/>
@@ -103,7 +103,7 @@
 		<property name="DevelopmentTime" value="4"/>
 		<property name="InitialCost" value="2"/>
 		<property name="FeaturePoints" value="1"/>
-		<!-- <property name="DeveloperPoints" value="2"/>-->
+		<property name="DeveloperPoints" value="2"/>
 	</card>
 		<card id="f14d02da-ac70-47b1-938c-1bba5083ea28" name="Herold Graphics Engine">
 		<property name="Type" value="Feature"/>
@@ -112,7 +112,7 @@
 		<property name="DevelopmentTime" value="35"/>
 		<property name="InitialCost" value="14"/>
 		<property name="FeaturePoints" value="10"/>
-		<!-- <property name="DeveloperPoints" value="12"/>-->
+		<property name="DeveloperPoints" value="12"/>
 	</card>
 </cards>
 
