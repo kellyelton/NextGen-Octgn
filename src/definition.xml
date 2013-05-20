@@ -2,7 +2,7 @@
 <game name="NextGen" 
       id="f80624da-58d7-4957-acd6-8a9ccb41619d" 
 	  octgnVersion="3.1.0.0" 
-	  version="1.0.0.8" 
+	  version="1.0.0.9" 
       markersize="25" 
 	  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
 	  tags="CCG Game Developer" 
@@ -55,9 +55,11 @@
         <cardaction menu="Remove Marker" shortcut="ctrl+W" execute="removemarker" />
         <cardaction menu="Add Custom Marker..." shortcut="ctrl+shift+Q" batchExecute="addanymarker" />
     </table>
-   <player summary="Hand:{#Hand} FP:{#FP}">
+   <player summary="Hand:{#Hand} Cash:{#Cash} FeaturePoints:{#FeaturePoints} DevPoints: {#DevPoints}">
     <globalvariable name="standing" value="1" />
-    <counter name="FP" icon="counters/score.png" />
+	<counter name="Cash" icon="counters/cash.png" default="10"/>
+    <counter name="FeaturePoints" icon="counters/feature.png" />
+	<counter name="DevPoints" icon="counters/dev.png" />
     <hand name="Hand" shortcut="ctrl+H" visibility="me" ordered="False" width="63" height="88" icon="groups/hand.png">
        <cardaction menu="Discard Card" shortcut="del" execute="discard" />
     </hand>
