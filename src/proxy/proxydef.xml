@@ -3,14 +3,14 @@
   <blocks>
     <block type="text" id="name">
       <location x="5" y="5"/>
-      <text color="#FFFFFF" size="20"/>
+      <text color="#FFFFFF" size="14"/>
     </block>
     <block type="text" id="resourcenums">
       <location x="230" y="10"/>
       <text color="#FFFFFF" size="14"/>
     </block>
 	<block type="text" id="resourcenums-feature">
-      <location x="160" y="10"/>
+      <location x="160" y="20"/>
       <text color="#FFFFFF" size="14"/>
     </block>
   </blocks>
