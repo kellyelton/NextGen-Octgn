@@ -2,7 +2,7 @@
 <game name="NextGen" 
       id="f80624da-58d7-4957-acd6-8a9ccb41619d" 
 	  octgnVersion="3.1.0.0" 
-	  version="1.0.0.5" 
+	  version="1.0.0.6" 
       markersize="25" 
 	  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
 	  tags="CCG Game Developer" 
@@ -38,7 +38,6 @@
         <groupaction menu="Draw" shortcut="ctrl+D" default="True" execute="draw" />
         <groupaction menu="Draw X Cards" shortcut="ctrl+shift+D" execute="drawMany" />
         <groupaction menu="Send Top X Cards to the Discard Pile" execute="mill" />
-        <groupaction menu="Shuffle" shortcut="ctrl+S" execute="shuffle" />
         <groupaction menu="Roll a 6-sided Die" shortcut="ctrl+r" execute="rolldice" />
         <groupaction menu="Flip a Coin" shortcut="ctrl+shift+r" execute="flipcoin" />
         <groupaction menu="Interrupt Game" shortcut="enter" execute="interrupt"	 />
@@ -61,9 +60,15 @@
     <hand name="Hand" shortcut="ctrl+H" visibility="me" ordered="False" width="63" height="88" icon="groups/hand.png">
        <cardaction menu="Discard Card" shortcut="del" execute="discard" />
     </hand>
-	<group name="Deck" visibility="me" width="63" height="88" icon="groups/hand.png"></group>
-	<group name="Contacts" visibility="me" width="63" height="88" icon="groups/hand.png"></group>
-	<group name="Discard" visibility="me" width="63" height="88" icon="groups/hand.png"></group>
+	<group name="Deck" visibility="none" width="63" height="88" icon="groups/hand.png">
+		<groupaction menu="Shuffle" shortcut="ctrl+S" execute="shuffle" />
+	</group>
+	<group name="Contacts" visibility="none" width="63" height="88" icon="groups/hand.png">
+		<groupaction menu="Shuffle" shortcut="ctrl+S" execute="shuffle" />
+	</group>
+	<group name="Discard" visibility="all" width="63" height="88" icon="groups/hand.png">
+		<groupaction menu="Shuffle" shortcut="ctrl+S" execute="shuffle" />
+	</group>
   </player>
   <shared>
 

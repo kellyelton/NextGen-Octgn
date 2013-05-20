@@ -156,7 +156,7 @@ def mill(group, count = None):
 
 def shuffle(group, x = 0, y = 0):
    mute()
-   shared.Deck.shuffle()
+   group.shuffle()
    if me.isActivePlayer:
      notify("{} shuffled the deck.".format(me))
    else:
