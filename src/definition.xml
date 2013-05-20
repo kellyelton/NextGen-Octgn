@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<game name="NextGen" 
+      id="f80624da-58d7-4957-acd6-8a9ccb41619d" 
+	  octgnVersion="3.1.0.0" 
+	  version="1.0.0.0" 
+      markersize="25" 
+	  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	  tags="CCG Game Developer" 
+	  description="NextGen" 
+	  setsurl="http://www.octgn.net" 
+	  gameurl="http://www.octgn.net" 
+	  authors="kelly elton" 
+	  iconurl="http://cdn1.iconfinder.com/data/icons/webdesigncreative/free_icons_64x64_png/Play-mark.png"> 
+    <scripts>
+      <script src="scripts/actions.py" />
+    </scripts>
+    <proxygen definitionsrc="proxy/proxydef.xml">
+    </proxygen>
+    <globalvariables>
+        
+    </globalvariables>
+    <card back="cards/back.png" front="cards/front.png" width="343" height="475" cornerRadius="5">
+        <property name="Type" type="String" textKind="Tokens" />
+		<property name="ResourceDrain" type="Integer"/>
+		<!-- Investor -->
+		<property name="RequiredFeaturePoints" type="Integer"/>
+		<property name="MaxUsage" type="Integer"/>
+		<property name="ResourceGain" type="Integer"/>
+		<!-- Developer -->
+		<property name="HireCost" type="Integer"/>
+		<!-- Feature -->
+		<property name="ResearchTime" type="Integer"/>
+		<property name="DevelopmentTime" type="Integer"/>
+		<property name="InitialCost" type="Integer"/>
+		<property name="FeaturePoints" type="Integer"/>
+    </card>
+    <table name="Table" visibility="undefined" ordered="False" width="1440" height="900" background="background/back.jpg" backgroundStyle="uniformToFill">
+        <groupaction menu="Draw" shortcut="ctrl+D" default="True" execute="draw" />
+        <groupaction menu="Draw X Cards" shortcut="ctrl+shift+D" execute="drawMany" />
+        <groupaction menu="Send Top X Cards to the Discard Pile" execute="mill" />
+        <groupaction menu="Shuffle" shortcut="ctrl+S" execute="shuffle" />
+        <groupaction menu="Roll a 6-sided Die" shortcut="ctrl+r" execute="rolldice" />
+        <groupaction menu="Flip a Coin" shortcut="ctrl+shift+r" execute="flipcoin" />
+        <groupaction menu="Interrupt Game" shortcut="enter" execute="interrupt"	 />
+        <groupaction menu="Pass" shortcut="tab" execute="passturn" />
+        <groupaction menu="Sit/Stand" shortcut="alt+s" execute="sitstand" />
+        <groupaction menu="SSStatus" shortcut="ctrl+alt+s"  execute="ssstatus" />
+        <groupaction menu="Become Dealer" shortcut="ctrl+B" execute="becomedealer" />
+        <groupaction menu="Who's Dealer?" execute="whosdealer" />
+        <cardaction menu="Turn card Sideways" default="True" execute="tap" />
+        <cardaction menu="Flip Card" shortcut="ctrl+f" execute="flip" />
+        <cardaction menu="Discard Card" shortcut="del" execute="discard" />
+        <cardaction menu="Add/Remove Red Highlight" shortcut="ctrl+A" execute="highlightcard" />
+        <cardaction menu="Add Marker" shortcut="ctrl+Q" execute="addmarker" />
+        <cardaction menu="Remove Marker" shortcut="ctrl+W" execute="removemarker" />
+        <cardaction menu="Add Custom Marker..." shortcut="ctrl+shift+Q" batchExecute="addanymarker" />
+    </table>
+   <player summary="Hand:{#Hand} FP:{#FP}">
+    <globalvariable name="standing" value="1" />
+    <counter name="FP" icon="counters/score.png" />
+    <hand name="Hand" shortcut="ctrl+H" visibility="me" ordered="False" width="63" height="88" icon="groups/hand.png">
+       <cardaction menu="Discard Card" shortcut="del" execute="discard" />
+    </hand>
+  </player>
+  <shared>
+
+  </shared>
+  <deck>
+      <section name="Main" group="Deck" />
+      <section name="Main2" group="Discard" />
+	  <section name="Contacts" group="Deck" />
+  </deck>
+</game>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<templates>
+  <blocks>
+    <block type="text" id="name">
+      <location x="5" y="5"/>
+      <text color="#FFFFFF" size="20"/>
+    </block>
+    <block type="text" id="resourcenums">
+      <location x="230" y="10"/>
+      <text color="#FFFFFF" size="14"/>
+    </block>
+	<block type="text" id="resourcenums-feature">
+      <location x="160" y="10"/>
+      <text color="#FFFFFF" size="14"/>
+    </block>
+  </blocks>
+  <template src="proxy/back.png" default="True">
+    <matches>
+      <match name="property" value="name" />
+    </matches>
+    <textblocks>
+      <link block="name">
+        <property name="Name" format="{}"/>
+      </link>
+    </textblocks>
+  </template>
+  <template src="proxy/back.png">
+    <matches>
+	  <match name="Type" value="Resource"/>
+    </matches>
+    <textblocks>
+      <link block="name">
+        <property name="Name" format="{}"/>
+      </link>
+	  <link block="resourcenums">
+        <property name="MaxUsage" format="U{}" />
+		<property name="ResourceGain" format="R+{}"/>
+		<property name="RequiredFeaturePoints" format="F{}"/>
+      </link>
+    </textblocks>
+  </template>
+  <template src="proxy/back.png">
+    <matches>
+	  <match name="Type" value="Employee"/>
+    </matches>
+    <textblocks>
+      <link block="name">
+        <property name="Name" format="{}"/>
+      </link>
+	  <link block="resourcenums">
+        <property name="HireCost" format="H{}" />
+		<property name="ResourceDrain" format="R-{}"/>
+      </link>
+    </textblocks>
+  </template>
+  <template src="proxy/back.png">
+    <matches>
+	  <match name="Type" value="Feature"/>
+    </matches>
+    <textblocks>
+      <link block="name">
+        <property name="Name" format="{}"/>
+      </link>
+	  <link block="resourcenums-feature">
+		<property name="ResourceDrain" format="R-{}"/>
+		<property name="ResearchTime" format="RT{}"/>
+		<property name="DevelopmentTime" format="DT{}"/>
+		<property name="InitialCost" format="C{}"/>
+		<property name="FeaturePoints" format="FP{}"/>
+      </link>
+    </textblocks>
+  </template>
+</templates>
