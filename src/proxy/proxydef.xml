@@ -80,7 +80,6 @@
 		<property name="ResourceDrain" format="R-{}"/>
 		<property name="ResearchTime" format="RT{}"/>
 		<property name="DevelopmentTime" format="DT{}"/>
-		<property name="InitialCost" format="C{}"/>
 		<property name="FeaturePoints" format="FP{}"/>
 		<property name="DeveloperPoints" format="DP{}"/>
       </link>

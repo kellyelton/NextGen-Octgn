@@ -2,7 +2,7 @@
 <game name="NextGen" 
       id="f80624da-58d7-4957-acd6-8a9ccb41619d" 
 	  octgnVersion="3.1.0.0" 
-	  version="1.0.0.9" 
+	  version="1.0.0.10" 
       markersize="25" 
 	  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
 	  tags="CCG Game Developer" 
@@ -31,7 +31,6 @@
 		<!-- Feature -->
 		<property name="ResearchTime" type="Integer"/>
 		<property name="DevelopmentTime" type="Integer"/>
-		<property name="InitialCost" type="Integer"/>
 		<property name="FeaturePoints" type="Integer"/>
 		<property name="DeveloperPoints" type="Integer"/>
     </card>

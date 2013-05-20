@@ -74,7 +74,6 @@
 		<property name="ResourceDrain" value="6"/>
 		<property name="ResearchTime" value="5"/>
 		<property name="DevelopmentTime" value="10"/>
-		<property name="InitialCost" value="4"/>
 		<property name="FeaturePoints" value="2"/>
 		<property name="DeveloperPoints" value="2"/>
 	</card>
@@ -83,7 +82,6 @@
 		<property name="ResourceDrain" value="8"/>
 		<property name="ResearchTime" value="7"/>
 		<property name="DevelopmentTime" value="12"/>
-		<property name="InitialCost" value="6"/>
 		<property name="FeaturePoints" value="4"/>
 		<property name="DeveloperPoints" value="6"/>
 	</card>
@@ -92,7 +90,6 @@
 		<property name="ResourceDrain" value="6"/>
 		<property name="ResearchTime" value="10"/>
 		<property name="DevelopmentTime" value="8"/>
-		<property name="InitialCost" value="3"/>
 		<property name="FeaturePoints" value="6"/>
 		<property name="DeveloperPoints" value="4"/>
 	</card>
@@ -101,7 +98,6 @@
 		<property name="ResourceDrain" value="3"/>
 		<property name="ResearchTime" value="2"/>
 		<property name="DevelopmentTime" value="4"/>
-		<property name="InitialCost" value="2"/>
 		<property name="FeaturePoints" value="1"/>
 		<property name="DeveloperPoints" value="2"/>
 	</card>
@@ -110,7 +106,6 @@
 		<property name="ResourceDrain" value="22"/>
 		<property name="ResearchTime" value="14"/>
 		<property name="DevelopmentTime" value="35"/>
-		<property name="InitialCost" value="14"/>
 		<property name="FeaturePoints" value="10"/>
 		<property name="DeveloperPoints" value="12"/>
 	</card>
