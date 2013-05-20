@@ -2,7 +2,7 @@
 <game name="NextGen" 
       id="f80624da-58d7-4957-acd6-8a9ccb41619d" 
 	  octgnVersion="3.1.0.0" 
-	  version="1.0.0.6" 
+	  version="1.0.0.7" 
       markersize="25" 
 	  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
 	  tags="CCG Game Developer" 
@@ -33,6 +33,7 @@
 		<property name="DevelopmentTime" type="Integer"/>
 		<property name="InitialCost" type="Integer"/>
 		<property name="FeaturePoints" type="Integer"/>
+		<property name="DeveloperPoints" type="Integer"/>
     </card>
     <table name="Table" visibility="undefined" ordered="False" width="1440" height="900" background="background/back.jpg" backgroundStyle="uniformToFill">
         <groupaction menu="Draw" shortcut="ctrl+D" default="True" execute="draw" />

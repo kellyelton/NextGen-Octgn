@@ -6,12 +6,9 @@
       <text color="#FFFFFF" size="14"/>
     </block>
     <block type="text" id="resourcenums">
-      <location x="230" y="10"/>
-      <text color="#FFFFFF" size="14"/>
-    </block>
-	<block type="text" id="resourcenums-feature">
-      <location x="160" y="20"/>
-      <text color="#FFFFFF" size="14"/>
+      <location x="129" y="5"/>
+	  <text color="#FFFFFF" size="14"/>
+	  <wordwrap height="34" width="214" align="far" valign="near" shrinktofit="True"/>
     </block>
   </blocks>
   <template src="proxy/back.png" default="True">
@@ -24,6 +21,7 @@
       </link>
     </textblocks>
   </template>
+  <!-- Resource Type -->
   <template src="proxy/back.png">
     <matches>
 	  <match name="Type" value="Resource"/>
@@ -39,20 +37,37 @@
       </link>
     </textblocks>
   </template>
+  <!-- Employee Type -->
   <template src="proxy/back.png">
     <matches>
-	  <match name="Type" value="Employee"/>
+		<match name="Type" value="Employee"/>
     </matches>
     <textblocks>
-      <link block="name">
-        <property name="Name" format="{}"/>
-      </link>
-	  <link block="resourcenums">
-        <property name="HireCost" format="H{}" />
-		<property name="ResourceDrain" format="R-{}"/>
-      </link>
+		<link block="name">
+			<property name="Name" format="{}"/>
+		</link>
+		<link block="resourcenums">
+			<property name="HireCost" format="H{}" />
+			<property name="ResourceDrain" format="R-{}"/>
+		</link>
     </textblocks>
   </template>
+  <template src="proxy/back.png">
+    <matches>
+		<match name="Type" value="Employee Developer"/>
+    </matches>
+    <textblocks>
+		<link block="name">
+			<property name="Name" format="{}"/>
+		</link>
+		<link block="resourcenums">
+			<property name="HireCost" format="H{}" />
+			<property name="ResourceDrain" format="R-{}"/>
+			<property name="DeveloperPoints" format="DP{}"/>
+		</link>
+    </textblocks>
+  </template>
+  <!-- Feature Type -->
   <template src="proxy/back.png">
     <matches>
 	  <match name="Type" value="Feature"/>
@@ -61,12 +76,13 @@
       <link block="name">
         <property name="Name" format="{}"/>
       </link>
-	  <link block="resourcenums-feature">
+	  <link block="resourcenums">
 		<property name="ResourceDrain" format="R-{}"/>
 		<property name="ResearchTime" format="RT{}"/>
 		<property name="DevelopmentTime" format="DT{}"/>
 		<property name="InitialCost" format="C{}"/>
 		<property name="FeaturePoints" format="FP{}"/>
+		<property name="DeveloperPoints" format="DP{}"/>
       </link>
     </textblocks>
   </template>
