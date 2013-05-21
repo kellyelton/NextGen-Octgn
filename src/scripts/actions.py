@@ -155,8 +155,10 @@ def mill(group, count = None):
     notify("{} mills the top {} cards from the Deck.".format(me, count))
 
 def shuffle(group, x = 0, y = 0):
-   mute()
-   group.shuffle()
+    mute()
+    group.shuffle()
+    notify("{} shuffled their deck")
+	
 def shuffleIntoDeck(group, x = 0, y = 0):
     mute()
     for c in group: c.moveTo(shared.Deck)
